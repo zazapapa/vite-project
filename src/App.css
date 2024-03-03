@@ -1,0 +1,42 @@
+/* Train.css */
+.train {
+  position: absolute;
+  top: 50%;
+  width: 200px;
+  height: 100px;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: left 0.1s linear;
+}
+
+.train-body {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #f00;
+}
+
+.train-wheel {
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #555;
+  border-radius: 50%;
+  transform: translateX(20px);
+}
+
+.train-wheel:nth-child(2) {
+  left: 30%;
+}
+
+.train-wheel:nth-child(3) {
+  left: 50%;
+}
+
+.train-wheel:nth-child(4) {
+  right: 0;
+}
